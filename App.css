@@ -1,0 +1,154 @@
+/* Todo App Styles */
+.todo-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  padding: 32px 24px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.todo-title {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.add-task-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.add-task-title {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.task-input {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.task-input:focus {
+  border-color: #3182ce;
+}
+
+.add-btn {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-btn:hover {
+  background: #2563eb;
+}
+
+.tasks-title {
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7fafc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+}
+.task-item:hover {
+  background: #e2e8f0;
+}
+
+.task-text {
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.checkbox-section {
+  margin-left: 12px;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: orange;
+  transition: accent-color 0.2s;
+}
+.task-checkbox.checked {
+  accent-color: green;
+}
+.task-checkbox.unchecked {
+  accent-color: orange;
+}
+
+/* Timer Counter Styles */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(67, 198, 172, 0.2);
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 350px;
+}
+
+.counter-container h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.counter-container p {
+  font-size: 3rem;
+  color: #43c6ac;
+  margin: 0 0 24px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.counter-container button {
+  background: #43c6ac;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  margin: 0 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(67, 198, 172, 0.15);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.counter-container button:hover {
+  background: #f8ffae;
+  color: #43c6ac;
+  transform: scale(1.1);
+}
